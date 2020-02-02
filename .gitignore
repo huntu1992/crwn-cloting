@@ -2,9 +2,10 @@
 
 # dependencies
 /node_modules
+/ws.code-workspace
 /.pnp
 .pnp.js
-
+/src/firebase
 # testing
 /coverage
 
