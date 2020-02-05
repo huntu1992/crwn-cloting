@@ -8,7 +8,7 @@ class SignIn extends React.Component {
     super(props);
     this.state = {
       email: '',
-      passward: ''
+      password: ''
     };
   }
   handleChange = e => {
@@ -17,17 +17,17 @@ class SignIn extends React.Component {
   };
   handleSubmit = event => {
     event.preventDefault();
-    this.setState({ email: '', passward: '' });
+    this.setState({ email: '', password: '' });
   };
   render() {
     return (
       <div className='sign-in'>
         <h2>I already have account</h2>
-        <span>Sign in with your email and passward</span>
+        <span>Sign in with your email and password</span>
         <form onSubmit={this.handleSubmit}>
           <FormInput
             handleChange={this.handleChange}
-            label='email'
+            label='Email'
             name='email'
             type='email'
             value={this.state.email}
@@ -35,7 +35,7 @@ class SignIn extends React.Component {
           />
           <FormInput
             handleChange={this.handleChange}
-            label='password'
+            label='Password'
             name='password'
             type='password'
             value={this.state.password}
