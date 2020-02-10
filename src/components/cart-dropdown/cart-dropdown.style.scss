@@ -10,11 +10,24 @@
   top: 80px;
   right: 0;
   z-index: 5;
+  .scrollbar {
+    &::-webkit-scrollbar {
+      width: 3px;
+      background: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: black;
+      opacity: 1;
+    }
+    &::-webkit-scrollbar-track {
+      background: none;
+    }
+  }
   .cart-items {
     height: 240px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow: auto;
   }
   button {
     margin-top: auto;
