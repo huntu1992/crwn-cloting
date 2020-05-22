@@ -1,5 +1,6 @@
 .collection-item {
-  width: 22%;
+  // view with 좀더 최적화된 %임
+  width: 22vw;
   display: flex;
   flex-direction: column;
   height: 350px;
